@@ -12,8 +12,13 @@
 </head>
 
 <body>
+    <img src="./src/img/logo-facebook.svg" alt="Facebook Logo" class="logo-fb">
+
     <section id="content">
-        <h3 class="title">Facebook Form</h3>
+        <div class="message">
+            <p class="first-message">Create a new account</p>
+            <p class="sub-message">It's quick and easy.</p>
+        </div>
         <form id="form" action="index.html" method="get">
             <div class="form-name">
                 <input type="text" name="name" id="name" placeholder="Name">
@@ -21,7 +26,7 @@
             </div>
 
             <div class="form-log">
-                <input type="text" name="phone-or-email" id="phone-or-email" placeholder="Phone or e-mail">
+                <input type="text" name="phone-or-email" id="phone-or-email" placeholder="Phone or email">
                 <input type="password" name="password" id="password" placeholder="New passowrd">
             </div>
 
@@ -31,6 +36,21 @@
                 </div>
 
                 <div class="select-birth">
+                    <select class="select-option" name="month" id="month">
+                        <option value="January">Jan</option>
+                        <option value="February">Feb</option>
+                        <option value="March">Mar</option>
+                        <option value="April">Apr</option>
+                        <option value="May">May</option>
+                        <option value="June">Jun</option>
+                        <option value="July">Jul</option>
+                        <option value="August">Aug</option>
+                        <option value="September">Sep</option>
+                        <option value="October">Oct</option>
+                        <option value="November">Nov</option>
+                        <option value="December">Dec</option>
+                    </select>
+
                     <select class="select-option" name="date" id="date">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -63,21 +83,6 @@
                         <option value="29">29</option>
                         <option value="30">30</option>
                         <option value="31">31</option>
-                    </select>
-
-                    <select class="select-option" name="month" id="month">
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
                     </select>
 
                     <select class="select-option" name="year" id="year">
@@ -119,24 +124,30 @@
                 <div class="title-mark">
                     Gender
                 </div>
-
-                <div class="gender-each">
-                    <span class="gender-each-option">
-                        <label class="option-title" for="female">Female</label>
+                <div class="gender-set">
+                    <div class="gender-set-option">
+                        <label for="female">Female</label>
                         <input type="radio" name="gender" id="female">
-                    </span>
-
-                    <span class="gender-each-option">
-                        <label class="option-title" for="male">Male</label>
+                    </div>
+                    <div class="gender-set-option">
+                        <label for="male">Male</label>
                         <input type="radio" name="gender" id="male">
-                    </span>
-
-                    <span class="gender-each-option">
-                        <label class="option-title" for="custom">Custom</label>
+                    </div>
+                    <div class="gender-set-option">
+                        <label for="custom">Custom</label>
                         <input type="radio" name="gender" id="custom">
-                    </span>
+                    </div>
                 </div>
             </div>
+
+            <p class="political">
+                People who use our service may have uploaded your contact information to Facebook. Learn more.
+            </p>
+            <p class="political">
+                By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS
+                Notifications from us and can opt out any time.
+            </p>
+
             <div class="button-submit">
                 <input type="submit" value="Sign Up" id="submit">
             </div>

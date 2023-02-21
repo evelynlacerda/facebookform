@@ -1,25 +1,47 @@
 body {
-    background-image: linear-gradient(180deg, #1877f2 60%, #e1e1e1 60%);
+    background-image: linear-gradient(180deg, #f0f2f5 80%, #fff 80%);
     width: 100%;
     height: 100vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 62.5%;
 }
 
+.logo-fb {
+    width: 100%;
+    height: 125px;
+    margin: 10px 0;
+}
+
 #content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100vh;
-    gap: 32px;
+    width: 450px;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
 }
 
-.title {
-    font-size: 32px;
-    color: #fff;
-    text-transform: uppercase;
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 10px 16px 16px;
+    border-radius: 10px 10px 0 0;
+}
+
+.first-message {
+    font-size: 25px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.sub-message {
+    font-size: 16px;
+    color: #888;
 }
 
 #form {
@@ -28,10 +50,9 @@ body {
     width: 450px;
     padding: 20px;
     gap: 10px;
-    background-color: rgba(255, 255, 255, .5);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+    background-color: #ffffff;
+    border-top: 1px solid #ccd0d5;
+    border-radius: 0 0 10px 10px;
 }
 
 .form-name {
@@ -46,9 +67,9 @@ body {
 #surname {
     flex-grow: 1;
     width: auto;
-    height: 32px;
-    padding: 8px;
-    border: none;
+    padding: 0 8px;
+    height: 40px;
+    border: 1px solid #ccd0d5;
     border-radius: 6px;
 }
 
@@ -62,9 +83,9 @@ body {
 #phone-or-email,
 #password {
    width: auto;
-   height: 32px;
-   padding: 8px;
-   border: none;
+   padding: 0 8px;
+   height: 40px;
+   border: 1px solid #ccd0d5;
    border-radius: 6px;
 }
 
@@ -90,38 +111,37 @@ body {
 }
 
 .select-option {
-    flex-grow: 1;
+    flex: 1;
     width: auto;
     height: 32px;
     padding-left: 8px;
-    border: none;
+    border: 1px solid #ccd0d5;
     border-radius: 6px;
 }
 
-.gender-each {
+.gender-set {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
     height: 32px;
     gap: 10px;
     font-size: 16px;
-    color: #202020;
+    color: #444;
 }
 
-.gender-each-option {
-    flex-grow: 1;
-    height: 100%;
-    text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+.gender-set-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    border: 1px solid #ccd0d5;
     border-radius: 6px;
 }
 
-.option-title {
-    display: inline-block;
-    height: 100%;
+.gender-set-option label {
+    display: flex;
     vertical-align: middle;
+    line-height: 1;
 }
 
 .button-submit {
@@ -131,6 +151,13 @@ body {
     width: 100%;
     height: 32px;
     margin-top: 10px;
+}
+
+.political {
+    width: 100%;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5;
 }
 
 #submit {
