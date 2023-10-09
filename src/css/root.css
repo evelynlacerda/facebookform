@@ -1,0 +1,13 @@
+:root {
+    --background: #F0F2F5;
+    --bg-content: #FFFFFF;
+    --ribbon: #235FAD;
+    --border: 1px solid #CCD0D5;
+
+    --gray800: #888888;
+    --gray400: #444444;
+    --gray300: #333333;
+
+    --button: #166fe5;
+    --action: #00a400;
+}
