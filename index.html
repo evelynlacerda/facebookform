@@ -10,37 +10,40 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/root.css">
     <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <div class="back-blue"></div>
+    <div class="back-blue" data-back-blue></div>
 
     <section id="login">
         <div class="intro">
-            <img src="./src/img/logo-facebook.svg" alt="Facebook">
-            <p class="fb-text">Facebook helps you connect and share with the people in your life.</p>
+            <img src="./src/img/logo-facebook.svg" alt="Facebook" class="animate__animated animate__fadeInLeft">
+            <p class="fb-text animate__animated animate__fadeInLeft">Facebook helps you connect and share with the people in your life.</p>
         </div>
-        <div class="login-content">
-            <form action="/index.html" id="form-login">
-                <input type="text" name="phone-or-email" id="phone-or-email" class="access-login" placeholder="Email address or phone number">
+        <div class="login-content animate__animated animate__zoomIn">
+            <form action="/" id="form-login" data-form-login>
+                <input type="text" name="phone-or-email" id="phone-or-email" class="access-login"
+                    placeholder="Email address or phone number">
                 <input type="password" name="passowrd" id="password" class="pass-login" placeholder="Password">
-                <button type="submit" class="button-login">Log In</button>
+                <button type="submit" class="button-login" data-login-button>Log In</button>
                 <a href="/" class="pass-reset">Forgot Password?</a>
             </form>
             <hr>
-            <button type="submit" class="signup-form" data-create-account>Create New Account</button>
+            <button class="signup-form" data-create-account>Create New Account</button>
         </div>
     </section>
 
     <section id="signup">
-        <img src="./src/img/logo-facebook.svg" alt="Facebook Logo" class="logo-fb">
-        <div class="content">
+        <img src="./src/img/logo-facebook.svg" alt="Facebook Logo" class="logo-fb animate__animated animate__backInDown">
+        <div class="content animate__animated animate__headShake">
             <div class="message">
                 <p class="first-message">Create a new account</p>
                 <p class="sub-message">It's quick and easy.</p>
             </div>
 
-            <form id="form-signup" action="index.html" method="POST">
+            <form id="form-signup" action="index.html" method="POST" data-form-signup>
                 <div class="form-name">
                     <input type="text" name="name" id="name" class="name" placeholder="Name">
                     <input type="text" name="surname" id="surname" class="surname" placeholder="Surname">
@@ -184,14 +187,20 @@
                     Notifications from us and can opt out any time.
                 </p>
 
-                <div class="button-submit">
-                    <input type="submit" value="Sign Up" id="submit" class="submit">
-                </div>
+                <button type="submit" id="submit" class="submit" data-submit-account>Sign Up</button>
             </form>
             <div class="account">
                 <a href="/" data-login-account>Already have an account?</a>
             </div>
         </div>
+    </section>
+
+    <section id="welcome">
+        <img src="./src/img/like.svg" alt="Facebook" class="welcome-img animate__animated animate__tada">
+        <h1 class="welcome-text animate__animated animate__bounceIn">Welcome</h1>
+        <hr class="welcome-hr animate__animated animate__zoomIn">
+        <p class="welcome-p animate__animated animate__fadeIn animate__delay-1s">Congratulations!<br>You're logged in to Facebook Page.</p>
+        <button class="btn-logout animate__animated animate__fadeInUp animate__delay-2s" data-logout-account>Log out</button>
     </section>
 
     <script src="./src/js/index.js"></script>

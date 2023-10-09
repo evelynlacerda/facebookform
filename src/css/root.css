@@ -1,13 +1,16 @@
 :root {
     --background: #F0F2F5;
     --bg-content: #FFFFFF;
-    --ribbon: #235FAD;
+    --ribbon: #1c64c4;
+    --bg-welcome: #192c46;
     --border: 1px solid #CCD0D5;
 
     --gray800: #888888;
     --gray400: #444444;
     --gray300: #333333;
 
-    --button: #166fe5;
     --action: #00a400;
+    --action-hover: #008000;
+    --button: #166fe5;
+    --button-hover: #0358c7;
 }
