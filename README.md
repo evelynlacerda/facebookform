@@ -1,7 +1,7 @@
 <div align="center">
 
-# 👥 Facebook: Create Account
-This project is a simple Facebook form clone. I decided to clone the create new account form, to apply what i've learned at the course DevQuest.
+# 👥 Facebook Log In Page
+This clone of Facebook Page was made to improve my skills in HTML, CSS and JavaScript. Here, I used the `flexbox` proprieties and `media queries` to make the page responsive. In total, are three different pages that are show according link that was clicked.
 
 ### 🚀 Technologies used:
 
@@ -12,4 +12,11 @@ This project is a simple Facebook form clone. I decided to clone the create new 
 </div>
 <br>
 
-<img alt="Preview" src="./src/img/facebookform.png" width="auto">
+### 📷 Preview:
+<img alt="Preview" src="./src/img/login.png" width="auto">
+<br>
+<br>
+<img alt="Preview" src="./src/img/signup.png" width="auto">
+<br>
+<br>
+<img alt="Preview" src="./src/img/welcome.png" width="auto">
