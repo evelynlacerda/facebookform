@@ -22,18 +22,19 @@
         </div>
         <div class="login-content">
             <form action="/index.html" id="form-login">
-                <input type="text" name="phone-or-email" id="phone-or-email" class="access-login">
-                <input type="password" name="passowrd" id="password" class="pass-login">
+                <input type="text" name="phone-or-email" id="phone-or-email" class="access-login" placeholder="Email address or phone number">
+                <input type="password" name="passowrd" id="password" class="pass-login" placeholder="Password">
                 <button type="submit" class="button-login">Log In</button>
                 <a href="/" class="pass-reset">Forgot Password?</a>
             </form>
-            <button type="submit" class="signup-form">Create New Account</button>
+            <hr>
+            <button type="submit" class="signup-form" data-create-account>Create New Account</button>
         </div>
     </section>
-    
+
     <section id="signup">
         <img src="./src/img/logo-facebook.svg" alt="Facebook Logo" class="logo-fb">
-        <div id="content">
+        <div class="content">
             <div class="message">
                 <p class="first-message">Create a new account</p>
                 <p class="sub-message">It's quick and easy.</p>
@@ -188,10 +189,12 @@
                 </div>
             </form>
             <div class="account">
-                <a href="/">Already have an account?</a>
+                <a href="/" data-login-account>Already have an account?</a>
             </div>
         </div>
     </section>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
